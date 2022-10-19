@@ -1,0 +1,47 @@
+Source: utfcpp
+Section: libdevel
+Priority: optional
+Build-Depends:
+ cmake,
+ debhelper-compat (= 13),
+Maintainer: Boyuan Yang <byang@debian.org>
+Standards-Version: 4.6.0
+Homepage: https://github.com/nemtrif/utfcpp
+Rules-Requires-Root: no
+Vcs-Git: https://salsa.debian.org/debian/utfcpp.git
+Vcs-Browser: https://salsa.debian.org/debian/utfcpp
+
+Package: libutfcpp-dev
+Architecture: any
+Multi-Arch: same
+Pre-Depends:
+ ${misc:Pre-Depends},
+Depends:
+ ${misc:Depends},
+Description: UTF8-CPP: UTF-8 with C++ - dev
+ Simple, portable and lightweight generic library for handling UTF-8 encoded
+ strings.
+ .
+ Features:
+  - Iterating through UTF-8 encoded strings
+  - Converting between UTF-8 and UTF-16/UTF-32
+  - Detecting invalid UTF-8 sequences
+ .
+ This package provides library development files.
+
+Package: libutfcpp-doc
+Section: doc
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ ${misc:Depends},
+Description: UTF8-CPP: UTF-8 with C++ - documentation
+ Simple, portable and lightweight generic library for handling UTF-8 encoded
+ strings.
+ .
+ Features:
+  - Iterating through UTF-8 encoded strings
+  - Converting between UTF-8 and UTF-16/UTF-32
+  - Detecting invalid UTF-8 sequences
+ .
+ This package provides library documentation and examples.

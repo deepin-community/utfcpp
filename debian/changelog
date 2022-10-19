@@ -1,0 +1,53 @@
+utfcpp (3.2.1-2) unstable; urgency=medium
+
+  * Reintroduce libutfcpp-doc:all package for compatibility.
+  * Let libutfcpp-doc package provide README.md documentation.
+  * Also install upstream-provided examples into libutfcpp-doc.
+
+ -- Boyuan Yang <byang@debian.org>  Tue, 05 Oct 2021 07:57:10 -0400
+
+utfcpp (3.2.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Refresh packaging:
+    + Bump Standards-Version to 4.6.0.
+    + Bump debhelper compat to v13.
+    + Update homepage field.
+    + Mark binary package as Multi-Arch: same.
+    - Drop libutfcpp-doc package, upstream is merging the doc into README.
+  * debian/upstream/metadata: Added.
+  * debian/watch: Update to v4; monitor new GitHub upstream.
+  * debian/rules: Modernize packaging.
+  * debian/copyright: Refresh information.
+  * debian/libutfcpp-dev.maintscript, debian/libutfcpp-dev.links: Add
+    compat symlink to avoid breaking build-dependencies after upstream
+    moved header file paths.
+
+ -- Boyuan Yang <byang@debian.org>  Mon, 04 Oct 2021 23:21:57 -0400
+
+utfcpp (2.3.4-2) unstable; urgency=medium
+
+  * Take over package maintenance through ITS process. (Closes: #995661)
+
+ -- Boyuan Yang <byang@debian.org>  Mon, 04 Oct 2021 07:20:22 -0400
+
+utfcpp (2.3.4-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Rebuild the package.
+  * debian/control: Update Vcs-* fields to use git packaging repo
+    under Salsa Debian Group. (Closes: #966202)
+
+ -- Boyuan Yang <byang@debian.org>  Wed, 02 Sep 2020 19:42:08 -0400
+
+utfcpp (2.3.4-1) unstable; urgency=low
+
+  * New upstream
+
+ -- Mathieu Malaterre <malat@debian.org>  Tue, 09 Apr 2013 18:20:31 +0200
+
+utfcpp (2.3.2-1) unstable; urgency=low
+
+  * Initial Debian Upload (Closes: #552618)
+
+ -- Mathieu Malaterre <malat@debian.org>  Sat, 26 Jan 2013 19:13:19 +0100
